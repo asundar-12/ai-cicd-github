@@ -14,7 +14,7 @@ class TestMath:
 
     def test_multiple(self):
         """Test multiplying two positive numbers."""
-        assert multiply(9, 9) == 81  # This is wrong!
+        assert multiple(9, 9) == 81  # This is wrong!
 
 
 
