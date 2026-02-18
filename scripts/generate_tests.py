@@ -5,7 +5,7 @@ from google import genai
 
 def generate_tests_for_function(func_info):
     """Use Gemini to generate pytest tests for a function."""
-    client = genai.Client(api_key=os.environ.get('GEMINI_API_KEY'))
+    client = genai.Client(api_key=os.environ.get('API_KEY'))
 
     prompt = f"""Generate pytest tests for this Python function.
 
