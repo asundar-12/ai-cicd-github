@@ -1,0 +1,13 @@
+What's going on in this workflow?
+
+on: pull_request
+Triggers when a PR is opened or updated (not on push to main).
+
+permissions
+Explicitly grants write access to PR comments. Without this, the workflow can't post comments.
+
+jobs
+A workflow is composed of one or more jobs. Each job runs independently and can be executed on a different runner (virtual machine). In your workflow, you have one job named 'review'.
+
+steps
+A job is a sequence of steps. Each step can either run a command (like pip install) or run an action (like 'actions/checkout@v4').
